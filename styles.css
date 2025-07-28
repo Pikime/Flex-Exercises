@@ -1,12 +1,13 @@
 body {
     font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .Flex-Container {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .Main {
@@ -16,6 +17,7 @@ body {
 
 .Padding{
     flex: 1;
+    min-width: 8px;
 }
 
 .NavBar {
@@ -41,9 +43,10 @@ body {
 
 .Hero{
     background-color: #1F2937;
+    padding: 20px 0;
 }
 
-.Flex-Text {
+.Hero-Text {
     flex: 1;
     padding-bottom: 20px;
 }
@@ -55,12 +58,21 @@ body {
     object-fit:scale-down;
 }
 
-.Button {
+.Sign-Up-Button {
     text-decoration: none;
     color:#F9FAF8;
     background-color: #3882F6;
     padding: 5px 20px 5px 20px;
     border-radius: 7px;
+    display: inline-block;
+}
+
+.Information {
+    background-color: #F9FAF8;
+}
+
+.Is-Column {
+    flex-direction: column;
 }
 
 .Information-Header {
@@ -77,15 +89,24 @@ body {
 }
 
 .Scroll {
-    overflow-x: scroll;
+    overflow-x: auto;
+    max-width: 100%;
+    flex-wrap: nowrap;
+
 }
 
 figure {
-    display: table;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-basis: 220px;
+    /* min-width: 260px; */
+    margin: 30px 
+
 }
 
 figure img {
-    max-width: 300px;
+    max-width: 220px;
     border-radius: 25px;
 }
 
@@ -93,4 +114,48 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     text-align: center;
+}
+
+.Quote {
+    background-color: #E5E7EB;
+    padding: 90px 0;
+}
+
+.Quote-Text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    align-self: flex-start;
+    padding: 0 90px;
+}
+
+.Attr-Text {
+    font-size: 30px;
+    color:#1F2937;
+    font-weight: 900;
+    align-self: flex-end;
+    padding: 0 90px;
+}
+
+.Call-To-Action {
+    background-color: #3882F6;
+    border-radius: 25px;
+    margin: 40px;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.Action-Text {
+    color: #F9FAF8;
+}
+
+.Action-Text.Bold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Call-To-Action .Sign-Up-Button {
+    border-color: #F9FAF8;
+    border-style: solid;
+    border-width: 1px;
 }
