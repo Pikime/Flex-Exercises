@@ -1,3 +1,96 @@
 body {
-    background-color: #1F;
+    font-family: Roboto, sans-serif;
+}
+
+.Flex-Container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Main {
+    max-width: 1300px;
+    width: 100%;
+}
+
+.Padding{
+    flex: 1;
+}
+
+.NavBar {
+    background-color: #1F2937;
+}
+
+.Nav-Item {
+    text-decoration: none;
+    color:#F9FAF8
+}
+
+.Nav-Item.Header {
+    font-size: 24px;
+    font-weight: 900;
+    margin-right: auto;
+}
+
+.Nav-Item.Link {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+.Hero{
+    background-color: #1F2937;
+}
+
+.Flex-Text {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.Hero-Image {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+.Button {
+    text-decoration: none;
+    color:#F9FAF8;
+    background-color: #3882F6;
+    padding: 5px 20px 5px 20px;
+    border-radius: 7px;
+}
+
+.Information-Header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.Information-Item {
+    text-align: center;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.Scroll {
+    overflow-x: scroll;
+}
+
+figure {
+    display: table;
+}
+
+figure img {
+    max-width: 300px;
+    border-radius: 25px;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
 }

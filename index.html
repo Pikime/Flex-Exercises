@@ -3,14 +3,57 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>this website is awesome</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="NavBar">
-            <a href="index.html">Header Logo</a>
-            <a href="page1.html">header link one</a>
-            <a href="page2.html">header link two</a>
-            <a href="page3.html">header link three</a>
+        <div class="Flex-Container NavBar">
+            <div class="Padding"> </div>
+            <div class="Flex-Container Main">
+                <a class="Nav-Item Header" href="index.html">Header Logo</a>
+                <a class="Nav-Item Link" href="page1.html">header link one</a>
+                <a class="Nav-Item Link" href="page2.html">header link two</a>
+                <a class="Nav-Item Link" href="page3.html">header link three</a>
+            </div> 
+            <div class="Padding"> </div>
         </div>
-        This is my body
+        <div class="Flex-Container Hero">
+            <div class="Padding"> </div>
+            <div class="Flex-Container Main">
+                <div class="Flex-Text"> 
+                    <h1 style="color:#F9FAF8;font-size: 48px;">This website is awesome </h1>
+                    <p style="color: #E5E7EB; font-size: 16px;">This website is awesome subtext that goes under the main title. Its smaller and the colour is lower contrast. </p>
+                    <a class="Button" href="signup.html"> Sign Up </a>
+                </div>
+            </div>
+            <img src="Simon1.jpg" alt="Black and White Cat" class="Hero-Image">
+            <div class="Padding"> </div>
+        </div>
+        <div class="Flex-Container Information">
+            <div class="Padding"> </div>
+            <div>
+                <p class="Information-Header"> Some Random Information </p>
+                <div class="Flex-Container Scroll">
+                    <figure>
+                        <img src="Simon2.jpg"> 
+                        <figcaption> This is some subtext under an illistration or image </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Simon3.jpg"> 
+                        <figcaption> This is some subtext under an illistration or image </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Simon4.jpg"> 
+                        <figcaption> This is some subtext under an illistration or image </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Simon5.jpg"> 
+                        <figcaption> This is some subtext under an illistration or image </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="Padding"> </div>
+        </div>
     </body>
 </html>
